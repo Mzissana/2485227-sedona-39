@@ -79,6 +79,12 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   margin: 0;
+  height: 100%;
+}
+
+.main-index,
+.main-inner {
+  flex-grow: 1;
 }
 
 .page-container {
@@ -89,6 +95,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 #00000033;
+  flex: 0 1 auto;
 }
 
 .page-header,
@@ -586,6 +593,15 @@ background-color: rgba(0, 0, 0, 0.3);
   border-color: transparent;
 }
 
+.newsletters-email-input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.newsletters-email-input:focus {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid rgba(131, 179, 211, 1)
+}
+
 .newsletters-form {
   margin: 0;
   padding: 0;
@@ -1076,6 +1092,9 @@ background-position: center;
   opacity: 0.3;
 }
 
+.checkbox-input:disabled .checkbox {
+  opacity: 0.3;
+}
 
 .radio {
   position: relative;
@@ -1120,6 +1139,10 @@ background-position: center;
 }
 
 .radio:active {
+  opacity: 0.3;
+}
+
+.radio-input:disabled .radio{
   opacity: 0.3;
 }
 
@@ -1225,7 +1248,7 @@ background-position: center;
   border: none;
   border-radius: 4px;
   font-family: inherit;
-
+  background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -1530,6 +1553,7 @@ background-position: center;
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .modal {
@@ -1736,9 +1760,12 @@ background-position: center;
   align-items: center;
 }
 
-
 .modal-form-counter-label {
   padding: 12px 12px 12px 0;
+}
+
+.children-counter-label {
+  padding-left: 5px;
 }
 
 .check-in-input-wrap,
@@ -1777,10 +1804,10 @@ background-position: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding: 15px 18px 18px 22px;
+  padding: 22px 18px 18px 22px;
   display: none;
-  top: 40px;
-  left: -114px;
+  top: 41px;
+  left: -116px;
 }
 
 .children-counter-button:hover .popover {
@@ -1888,35 +1915,35 @@ background-position: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-form-input::-moz-placeholder {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-form-input:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-form-input::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-form-input::placeholder {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 

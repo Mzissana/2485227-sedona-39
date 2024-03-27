@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
@@ -133,7 +133,7 @@
           <li class="promo-item card-light">
             <div class="promo-item-wrap">
               <h3 class="promo-title">Сувениры</h3>
-              <svg class="promo-img" xmlns="http://www.w3.org/2000/svg" width="65" height="76" fill="none" viewBox="0 0 65 76">
+              <svg aria-hidden="true" focusable="false" class="promo-img" xmlns="http://www.w3.org/2000/svg" width="65" height="76" fill="none" viewBox="0 0 65 76">
                 <path   d="M61.6 22.5H36.8c13.8-7 14.9-11.3 14.4-13.7-1.2-4-5.7-7-10-5.5-5.6 2.2-7.1 10.5-8.6 16.5-2-6.1-3.8-13.8-8.2-17.8a7.3 7.3 0 0 0-5.8-2c-4 .4-9.8 5.5-7.5 11 2.3 5.5 9.7 8.9 14.6 11.6H3.4a2.9 2.9 0 0 0-2.9 2.9v11.3c0 1.6 1.3 2.9 2.9 2.9h.3V76h57.8V39.6h.1c1.6 0 2.9-1.3 2.9-3V25.5c0-1.6-1.3-3-2.9-3ZM42.9 5.9c2.1-.3 5 1.3 5.3 3.2.4 2.8-3.4 5.3-5.1 6.4-2.5 1.7-4.9 2.6-7.3 4 .9-3.6 2.5-13 7.1-13.6ZM20 15.9c-2.2-1.5-6.5-4.4-6.4-7.8.1-3.7 5.7-6.7 8.8-4 3.9 3.5 5.7 11.2 7.1 16.7-3.2-1.5-6.3-2.8-9.5-5ZM26 73H6.6V39.6H26V73Zm0-36.5H3.5v-11H26v11Zm10.2 0V73H29V25.6h7.2v10.9ZM58.5 73H39.1V39.6h19.4V73Zm2.9-36.5H39.1v-11h22.3v11Z"/>
               </svg>
               <p class="promo-item-description">Не только китайского,<br> но и настоящего местного производства! </p>
@@ -154,7 +154,8 @@
             <p class="newsletters-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="newsletters-form-email">
-                <input class="newsletters-email-input" type="email" name="email" placeholder="Ваш e-mail" required>
+                <label class="visually-hidden" for="email">Ваш e-mail</label>
+                <input class="newsletters-email-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
                 <button class="button newsletters-button button-blue button-reset" type="submit">Подписаться</button>
               </p>
             </form>
@@ -167,7 +168,7 @@
             <h2 class=" page-footer-title visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list list-reset">
               <li class="footer-social-item">
-                <a class="socials-button" href="#">
+                <a class="socials-button" href="https://vk.com/htmlacademy">
                   <svg class="socials-icon button-icon-blue" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none" viewBox="0 0 25 15">
                     <path fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/>
                   </svg>
@@ -175,7 +176,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="socials-button" href="#">
+                <a class="socials-button" href="https://t.me/htmlacademy">
                   <svg class="socials-icon button-icon-blue" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 18 16">
                     <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/>
                   </svg>
@@ -183,7 +184,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="socials-button" href="#">
+                <a class="socials-button" href="https://www.youtube.com/user/htmlacademyru">
                   <svg class="socials-icon button-icon-blue"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none" viewBox="0 0 23 18">
                     <path d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z"/>
                   </svg>
@@ -194,14 +195,15 @@
           </section>
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="htmlacademy-link button-icon-brown" href="https://htmlacademy.ru/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34"><path   d="M0 13.7v2.6h2.5v-2.6H0ZM11.6 5.3C10 5.3 8.8 6 8 7h-.1V.8h-2v15.5h2V11c0-2 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6c.1-3-1.8-5-4.5-5ZM26.6 5.6h-4.8V2h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1V7.5h4.8v-2ZM41.1 5.4c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.7-3.1 1.7h-.1V5.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.7c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.5c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1V.7h-2v12.7ZM28.9 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6S21.9 30 25 30c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM25.3 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.4 3.6-3.6 3.6ZM44.2 22.8c-.5-2.4-2.6-4-5.4-4a5.4 5.4 0 0 0-5.6 5.5c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM51.5 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.5 3.6-3.6 3.6ZM68.7 20.6a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.2h-2v6.4ZM65.1 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.7a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 2c1.7 0 3 1 3.3 2.5h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.7a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8V19h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V24c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.8l-3.6-8.9h-2.2l4.8 11.6c-.3 1-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 9Z"/></svg>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34"><path   d="M0 13.7v2.6h2.5v-2.6H0ZM11.6 5.3C10 5.3 8.8 6 8 7h-.1V.8h-2v15.5h2V11c0-2 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6c.1-3-1.8-5-4.5-5ZM26.6 5.6h-4.8V2h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1V7.5h4.8v-2ZM41.1 5.4c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.7-3.1 1.7h-.1V5.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.7c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.5c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1V.7h-2v12.7ZM28.9 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6S21.9 30 25 30c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM25.3 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.4 3.6-3.6 3.6ZM44.2 22.8c-.5-2.4-2.6-4-5.4-4a5.4 5.4 0 0 0-5.6 5.5c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM51.5 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.5 3.6-3.6 3.6ZM68.7 20.6a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.2h-2v6.4ZM65.1 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.7a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 2c1.7 0 3 1 3.3 2.5h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.7a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8V19h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V24c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.8l-3.6-8.9h-2.2l4.8 11.6c-.3 1-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 9Z"/></svg>
+            <span class="visually-hidden">Сайт html-academy</span>
           </a>
           </div>
         </footer>
   </div>
-  <div class="modal-container ">
+  <div class="modal-container">
     <div class="modal modal-booking">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -211,16 +213,16 @@
           <div class="booking-date-form-inner">
               <label class="modal-form-label check-in-label" for="check-in">Дата Заезда:</label>
               <div class="check-in-input-wrap">
-                <input class="check-in-input modal-form-input modal-form-date-input" id="check-in" type="text" placeholder="27 апреля 2020" required >
-                <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+                <input class="check-in-input modal-form-input modal-form-date-input" name="check-in" id="check-in" type="text" placeholder="Укажите дату" required >
+                <svg aria-hidden="true" focusable="false" class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </div>
               <span class="booking-alert">Мы не можем отправить вас в прошлое.</span>
 
 
-              <label class="modal-form-label check-out-label" for="check-out">Даты Выезда:</label>
+              <label class="modal-form-label check-out-label" for="check-out">Дата Выезда:</label>
               <div class="check-out-input-wrap">
-                <input class="check-out-input modal-form-input modal-form-date-input" id="check-out"  type="text" placeholder="1 сентября 2023" required >
-                <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+                <input class="check-out-input modal-form-input modal-form-date-input" name="check-out" id="check-out"  type="text" placeholder="Укажите дату" required >
+                <svg aria-hidden="true" focusable="false" class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </div>
               <span class="booking-message">На эти даты есть свободные номера. Пока есть.</span>
           </div>
@@ -231,14 +233,21 @@
                   <label class="modal-form-label modal-form-counter-label" for="adults">Взрослые:</label>
                 </div>
                 <div class="input-number">
-                  <button class="input-number-minus  button-reset" type="button" ><svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg></button>
-                  <input class="input-number-input modal-form-input" id="adults" type="text" placeholder="2">
-                  <button class="input-number-plus  button-reset" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
-                </div>
+                  <button class="input-number-minus  button-reset" type="button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg>
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input class="input-number-input modal-form-input" name="adults-counter" id="adults" type="text" placeholder="2">
+                  <button class="input-number-plus  button-reset" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+
+                  </div>
               </div>
 
               <div class="counter-wrap">
-                <div class="counter-label-wrap">
+                <div class="counter-label-wrap children-counter-wrap">
                   <label class="modal-form-label modal-form-counter-label children-counter-label" for="children">Дети:</label>
                   <button class="children-counter-button button-reset" type="button">
                     <span class="popover">
@@ -249,14 +258,20 @@
 
 
                 <div class="input-number">
-                  <button class="input-number-minus   button-reset" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg></button>
-                  <input class="input-number-input modal-form-input" id="children" type="text" placeholder="2">
-                  <button class="input-number-plus  button-reset" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
+                  <button class="input-number-minus button-reset" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg>
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input class="input-number-input modal-form-input" name="children-counter" id="children" type="text" placeholder="2">
+                  <button class="input-number-plus  button-reset" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
                 </div>
                </div>
               </div>
 
-            <button class="search-modal-button button-reset" type="button">Найти</button>
+            <button class="search-modal-button button-reset" type="submit">Найти</button>
           </form>
         </section>
 
