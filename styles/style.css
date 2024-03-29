@@ -1065,7 +1065,7 @@ background-position: center;
   top: 1px;
 }
 
-.checkbox-input:checked + .checkbox-mark::after {
+.checkbox-input:checked + .checkbox .checkbox-mark::after {
   content:"";
   position: absolute;
   background-image: url("../images/icons/tick.svg");
@@ -1117,15 +1117,19 @@ background-position: center;
   top: 1px;
 }
 
-.radio-input:checked + .radio-mark::after {
+.radio-mark::after {
   content:"";
   position: absolute;
   width: 10px;
   height: 10px;
   left: 5px;
   top: 5px;
-  background-color: #3f5e72;
+  background-color: transparent;
   border-radius: 50%;
+}
+
+.radio-input:checked + .radio .radio-mark::after {
+  background-color: #3f5e72;
 }
 
 .radio:hover {
