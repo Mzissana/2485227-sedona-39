@@ -1023,6 +1023,7 @@ background-position: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+  position: relative;
 }
 
 .infrastructure-list {
@@ -1044,12 +1045,12 @@ background-position: center;
 
 
 .checkbox {
-  position: relative;
-  display: block;
   padding-left: 36px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+
 }
 
 .checkbox-mark {
@@ -1092,13 +1093,12 @@ background-position: center;
   opacity: 0.3;
 }
 
-.checkbox-input:disabled .checkbox {
+.checkbox-input:disabled + .checkbox {
   opacity: 0.3;
 }
 
 .radio {
   position: relative;
-  display: block;
   padding-left: 36px;
   cursor: pointer;
   display: flex;
@@ -1128,8 +1128,6 @@ background-position: center;
   border-radius: 50%;
 }
 
-
-
 .radio:hover {
   opacity: 0.6;
 }
@@ -1142,11 +1140,11 @@ background-position: center;
   opacity: 0.3;
 }
 
-.radio-input:disabled .radio{
+.radio-input:disabled + .radio{
   opacity: 0.3;
 }
 
-.radio-input:focus + .radio-mark {
+.radio:focus + .radio-mark {
   outline: 2px solid #68a2ca;
 }
 
