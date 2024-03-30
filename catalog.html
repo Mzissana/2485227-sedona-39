@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Гостиницы Седоны</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 <body>
@@ -289,8 +289,9 @@
       <p class="newsletters-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="newsletters-form-email">
-          <input class="newsletters-email-input" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button newsletters-button button-blue" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="email">Ваш e-mail</label>
+          <input class="newsletters-email-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="button newsletters-button button-blue button-reset" type="submit">Подписаться</button>
         </p>
       </form>
     </div>
